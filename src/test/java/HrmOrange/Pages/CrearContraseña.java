@@ -1,4 +1,4 @@
-package Booking.Paginas;
+package HrmOrange.Pages;
 
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import Booking.Steps.Questions;
+import HrmOrange.Steps.Questions;
 import net.thucydides.core.annotations.Step;
 
 public class CrearContraseña {

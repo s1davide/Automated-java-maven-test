@@ -1,4 +1,4 @@
-package Booking.Steps;
+package HrmOrange.Steps;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,22 +15,21 @@ public class Conexion {
 
 	@Before
 	@Step
-	public WebDriver abrirNavegador() {
+	public WebDriver openNavigator() {
 		System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver95.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.navigate().to("https://www.booking.com/index.es.html");		
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);		
+		driver.navigate().to("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //		WebElement searchInput = driver.findElement(By.id("ss"));
 //		searchInput.sendKeys("Ucrania");
 //		searchInput.submit();
 //		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);	
 //		WebElement fiveStarsFilter = driver.findElement(By.id("__bui-102"));
 //		System.out.println("Executed action");
-//		fiveStarsFilter.click();		
+//		fiveStarsFilter.click();
 		return this.driver;
 
 	}
-	
 
 }

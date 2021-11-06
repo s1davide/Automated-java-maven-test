@@ -1,4 +1,4 @@
-package Booking.Steps;
+package HrmOrange.Steps;
 
 import java.io.IOException;
 import java.util.Date;
@@ -49,5 +49,14 @@ public class Questions {
 	public void textoCrearCuentaAssert(WebDriver driver) {
 
 		Assert.assertEquals("Crea una contraseña", "Crea una contraseña");
+	}
+
+	@Step
+	public void tiempoSegundos(int seconds) {
+		try {
+			Thread.sleep(seconds * 1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 }

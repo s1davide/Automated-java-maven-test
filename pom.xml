@@ -6,10 +6,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>Booking</groupId>
-	<artifactId>Automatizacion</artifactId>
+	<artifactId>HRMOrange</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>Automatizacion</name>
+	<name>HRMOrange</name>
 	<url>http://www.example.com</url>
 
 	<properties>
