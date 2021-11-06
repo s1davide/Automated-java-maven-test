@@ -25,6 +25,6 @@ public class LoginPage {
 	public void loginOrange (String user, String pass) {
 		inputUserName.sendKeys(user);
 		inputPassword.sendKeys(pass);
-		buttonPages.btnLogin();		
+		buttonPages.btnLogin();
 	}
 }

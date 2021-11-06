@@ -13,6 +13,10 @@ public class ButtonPages {
 	
 	@FindBy(how = How.ID, using = "menu_leave_viewLeaveModule")
 	private WebElement btnLeave;
+	
+	@FindBy(how = How.XPATH, using = "//input[@name='btnSearch']")
+	private WebElement btnSearch;
+	
 	//Esto es un constructor que tiene el driver activo
 	public ButtonPages(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -27,5 +31,8 @@ public class ButtonPages {
 	}
 	public void btnleaveList() {
 		btnLeave.click();
+	}
+	public void btnSearch() {
+		btnSearch.click();		
 	}
 }

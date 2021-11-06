@@ -26,6 +26,7 @@ public class DefinitionsSteps {
 	
 	@And("^ingresar el usuario (.*) y la contraseña (.*)$")
 	public void loginOrange(String user, String pass) {
+		System.out.println(user);
 		this.loginPage = new LoginPage(driver);
 		this.loginPage.loginOrange( user, pass);
 	}
@@ -34,5 +35,11 @@ public class DefinitionsSteps {
 	public void leaveList() {
 		this.leavePage = new LeavePage(driver);
 		this.leavePage.leaveList();
+	}
+	
+	@And("^se diligencia el campo (.*) selecciono (.*)$")
+	public void searchEmployee(String employee, String actions) {
+		this.leavePage = new LeavePage(driver);
+		this.leavePage.searchEmployee(employee, actions);
 	}
 }
