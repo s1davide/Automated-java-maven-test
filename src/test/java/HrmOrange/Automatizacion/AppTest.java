@@ -1,4 +1,4 @@
-package Booking.Automatizacion;
+package HrmOrange.Automatizacion;
 
 import static org.junit.Assert.assertTrue;
 
